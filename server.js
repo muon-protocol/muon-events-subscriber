@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 require("./routes/txs.js")(app);
+require("./routes/nodes.js")(app);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
