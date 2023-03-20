@@ -6,8 +6,9 @@ const db = require("../utils/db");
 const handle_message = async (msg) => {
   //TODO: verify the request and TSS signatures
   let data = JSON.parse(msg);
-  data["_id"] = data.requestData.reqId;
+  data["_id"] = data.reqId;
   let collection = await db.get("requests");
+  console.log(`Saving ${data.reqId}`)
   await collection.insertOne(data);
 };
 

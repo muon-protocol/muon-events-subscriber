@@ -9,7 +9,7 @@ module.exports = (app) => {
       collection
         .find({})
         .sort({
-          "requestData.data.timestamp": -1,
+          "data.timestamp": -1,
         })
         .limit(100)
         .toArray(function(err, rows) {
