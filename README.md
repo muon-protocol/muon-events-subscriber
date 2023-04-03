@@ -4,7 +4,7 @@
 
 ```
 $ npm install
-$ npm run subscribe # Runs the subsriber service that loads data from redis pubsub queue and save into MongoDB
+$ npm run subscribe # Runs the subscriber service that loads data from redis pubsub queue and save into MongoDB
   
 $ npm start # Runs the web service  
 
