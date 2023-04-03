@@ -1,4 +1,4 @@
-# Muon Threshold Signature
+# Muon Explorer Backend
 
 ## Run on local/dev envs
 
@@ -6,7 +6,7 @@
 $ npm install
 $ npm run subscribe # Runs the subsriber service that loads data from redis pubsub queue and save into MongoDB
   
-$ npm start # Runs the web serice  
+$ npm start # Runs the web service  
 
 ```
 
